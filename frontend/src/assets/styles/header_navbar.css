@@ -1,0 +1,77 @@
+.navbar {
+    background-color:#525272; /* Background color for the Navbar */
+    border-bottom: 4px solid #ffc107; /* Bottom border color (adjust to your preference) */
+}
+aside {
+    background: repeating-linear-gradient(
+      35deg,
+      hsl(343 100% 50%) 0px 2px,
+      hsl(23 100% 50%) 0px 4px
+    );
+    mix-blend-mode: multiply;
+    animation: none 40000ms infinite linear;
+  }
+  @keyframes move {
+    100% {
+      transform: translate(41px, 0px);
+    }
+  }
+  body > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body {
+    height: 100vh;
+    /* overflow: hidden; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  
+    background: #a8a8c1;
+    color: white;
+  }
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Hamburger menu icon color */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove the outline on focus for the hamburger menu */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Navbar link text size */
+    color: #fff; /* Navbar link text color */
+    padding: 8px 16px; /* Navbar link padding (adjust as needed) */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Navbar link text color on hover (adjust to your preference) */
+}
+
+/* Active link styles */
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #ffc107; /* Background color for the active link */
+    color: #343a40; /* Text color for the active link */
+    border-radius: 4px; /* Add rounded corners to the active link */
+}
+
+/* Media query for adjusting Navbar padding on smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+}
